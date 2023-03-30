@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Signin Form</title>
 </head>
 
@@ -15,47 +13,71 @@
 
 
     <div class="container">
-        <h2 id="heading">Signin Form</h2>
-      
+        <h1 id="heading">Create Your BookMy Trip Account</h1>
+
         <form action="" class="form">
             <div class="form-group">
-                <label for="">User name<sup>*</sup></label>
-                <input type="text"   placeholder="Ram"id="username" autocomplete="on"  >
-                <i class="ion-ios-checkmark"></i>
-                <i class="ion-android-alert"></i>
+                <label for="">First Name</label>
+                <input type="text" placeholder="Enter your First Name" id="firstname" class="input" autocomplete="on">
+
                 <small></small>
             </div>
             <div class="form-group">
-                <label for="">Email<sup>*</sup></label>
-                <input type="text" placeholder="eg:bhadri2001@gmail.com" id="email" autocomplete="on">
-                <i class="ion-ios-checkmark"></i>
-                <i class="ion-android-alert"></i>
+                <label for="">Last Name</label>
+                <input type="text" placeholder="" id="lastname" class="input" autocomplete="on">
+
                 <small></small>
             </div>
             <div class="form-group">
-                <label for="">Phone number<sup>*</sup></label>
-                <input type="text" placeholder="1234567890" id="phonenumber" autocomplete="on">
-                <i class="ion-ios-checkmark"></i>
-                <i class="ion-android-alert"></i>
+                <label for="">Email Address</label>
+                <input type="text" placeholder="eg:bhadri2001@gmail.com" id="email" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="">Mobile Number</label>
+                <input type="text" placeholder="1234567890" id="phonenumber" class="input" autocomplete="on">
+
                 <small></small>
             </div>
 
             <div class="form-group">
-                <label for="">Password<sup>*</sup></label>
-                <input type="password" placeholder="**********" id="password" autocomplete="on">
-                <i class="ion-ios-checkmark"></i>
-                <i class="ion-android-alert"></i>
+                <label for="">Password</label>
+                <input type="password" placeholder="**********" id="password" class="input" autocomplete="on">
+
                 <small></small>
             </div>
             <div class="form-group">
-                <label for="">Confirm password<sup>*</sup> </label>
-                <input type="password" placeholder="**********" id="confirmpassword" autocomplete="on">
-                <i class="ion-ios-checkmark"></i>
-                <i class="ion-android-alert"></i>
+                <label for="">Gender</label>
+
+                <input type="radio" id="genderM" name="gender" value="Male"> Male
+                <input type="radio" id="genderF" name="gender" value="Female"> Female
+                <small></small>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="">City</label>
+                <select id="city">
+                    <option value="" disabled selected> Choose...</option>
+                    <option value="1">Chennai</option>
+                    <option value="2">Coimbatore</option>
+                    <option value="3">Tirunelveli</option>
+                    <option value="4">Madurai</option>
+                    <option value="4">Tiruchirappalli</option>
+                    <option value="6">Tiruppur</option>
+                    <option value="7">Thanjavur</option>
+                    <option value="8">Nagercoil</option>
+                    <option value="9"> Kanchipuram</option>
+                    <option value="10">Karur</option>
+                </select>
                 <small></small>
             </div>
-          
-            <button id='submit'>Submit</button>
+            <div class="form-group">
+                <input type="checkbox" name="agree" id="agree">
+                <span id="terms">I would like to kept informed of special promotions and offers by BookMyTrip</span>
+                <small></small>
+            </div>
+            <button id='submit'>Register</button>
         </form>
     </div>
     <script src="./script.js"></script>
