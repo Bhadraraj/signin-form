@@ -22,11 +22,14 @@ body {
 label {
     font-weight: bold;
 }
-
+#terms{
+    font-size: 12px;
+}
 .container {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 400px;
     background-color: rgb(238, 238, 238);
+    padding: 10px;
 }
 #heading{
    text-align: center;
@@ -132,6 +135,9 @@ select{
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container {
         width: 70%;
+    }
+    #heading{
+        font-size: 18px;
     }
 }
 
